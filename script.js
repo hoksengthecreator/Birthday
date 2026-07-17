@@ -41,7 +41,7 @@ Never stop smiling because your smile brightens everyone's day, You've got the m
 Once again, Happy Birthday nah.
 
 With lots of love,
-❤️ Nikaa your freind`;
+❤️ Nikaa your friend`;
 
     const typewriter = document.getElementById("typewriter");
 
