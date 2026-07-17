@@ -7,7 +7,8 @@ box-sizing:border-box;
 body{
     font-family:'Poppins',sans-serif;
     min-height:100vh;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
     background:linear-gradient(
         135deg,
         #ffd6e8,
@@ -30,25 +31,18 @@ body{
 }
 
 .container{
-
-width:100%;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-padding:30px;
-
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px 20px;
 }
 
 .glass{
 
-width:700px;
-
-padding:60px;
-
+width:min(700px, 100%);
+    padding:40px 25px;
 background:rgba(255,255,255,.35);
 
 backdrop-filter:blur(18px);
@@ -452,5 +446,31 @@ opacity:1;
 .home{
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
+    padding:40px 20px;
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:42px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    p{
+        font-size:17px;
+    }
+
+    .gift{
+        font-size:70px;
+    }
+
+    .btn{
+        font-size:18px;
+        padding:15px 35px;
+    }
+
 }
